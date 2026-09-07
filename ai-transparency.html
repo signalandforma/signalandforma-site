@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Transparency · Signal &amp; Forma</title>
+<meta name="description" content="How Signal & Forma uses AI in the audit process, and the controls that keep findings verifiable.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://signalandforma.com/ai-transparency.html">
+<link rel="icon" type="image/svg+xml" href="signal-forma-favicon-light.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+:root{
+  --black:#0a0a0a;--white:#fafaf8;--gray-100:#f4f3f0;--gray-200:#e8e7e3;
+  --gray-400:#b0afa8;--gray-600:#6b6a65;--gray-800:#2e2d2a;
+  --charcoal:#1c1b18;--accent:#2a4a3e;--accent-light:#e8eeeb;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--gray-600);font-family:var(--sans);font-weight:300;font-size:1rem;line-height:1.8}
+.doc-nav{border-bottom:1px solid var(--gray-200);padding:1.4rem 2rem;display:flex;justify-content:space-between;align-items:center}
+.doc-nav a{text-decoration:none;color:var(--charcoal)}
+.nav-logo-main{font-family:var(--serif);font-size:1.25rem;letter-spacing:0.03em}
+.nav-back{font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;color:var(--gray-600)}
+.nav-back:hover{color:var(--accent)}
+main{max-width:720px;margin:0 auto;padding:5rem 2rem 6rem}
+.doc-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-400);font-weight:500;margin-bottom:1.6rem}
+h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.2rem,4vw,3.2rem);line-height:1.15;color:var(--charcoal);margin:0 0 1rem}
+.effective{font-size:0.85rem;color:var(--gray-400);margin:0 0 3.5rem;padding-bottom:2rem;border-bottom:1px solid var(--gray-200)}
+h2{font-family:var(--serif);font-weight:300;font-size:1.7rem;color:var(--charcoal);margin:3.2rem 0 1rem}
+h3{font-family:var(--sans);font-weight:500;font-size:0.95rem;color:var(--charcoal);margin:2.2rem 0 0.7rem}
+p{margin:0 0 1.1rem}
+ul{margin:0 0 1.4rem;padding-left:1.1rem}
+li{margin-bottom:0.55rem}
+strong{font-weight:500;color:var(--charcoal)}
+a{color:var(--accent)}
+.callout{border-left:2px solid var(--accent);background:var(--accent-light);padding:1.2rem 1.5rem;margin:2rem 0}
+.callout p:last-child{margin-bottom:0}
+.tbd{color:var(--accent);background:var(--accent-light);padding:0 3px}
+footer{border-top:1px solid var(--gray-200);padding:2.5rem 2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.78rem;color:var(--gray-400)}
+.foot-links{display:flex;gap:1.4rem}
+.foot-links a{letter-spacing:0.1em;text-transform:uppercase;font-weight:500;color:var(--gray-400);text-decoration:none}
+.foot-links a:hover{color:var(--accent)}
+@media(max-width:640px){main{padding:3rem 1.4rem 4rem}}
+</style>
+</head>
+<body>
+<nav class="doc-nav">
+  <a href="/" class="nav-logo-main">Signal &amp; Forma</a>
+  <a href="/" class="nav-back">← Back to site</a>
+</nav>
+<main>
+  <div class="doc-label">Method</div>
+  <h1>How we use AI</h1>
+  <p class="effective">Effective [date]</p>
+<div class="callout">
+<p>Most firms in this field use AI and say nothing about it. We think you should know exactly where we use it, exactly where we don't, and what stops it from inventing things about you.</p>
+</div>
+
+<h2>Where AI is used</h2>
+<p><strong>AI assists with:</strong> classifying signals gathered from public sources, drafting structured inferences from those signals, and checking our own work for unsupported claims.</p>
+<p><strong>AI does not:</strong> decide your ratings, write your recommendations, or determine what appears in your final report. Every audit is reviewed by a person before delivery.</p>
+
+<h2>The rule every finding must satisfy</h2>
+<p>Every impression in your report traces back through a chain. An impression rests on an inference. An inference rests on a signal. A signal cites a source you can open and check yourself.</p>
+<p>If any link in that chain is missing, the finding is removed or downgraded. It does not ship. This is the single control that separates analysis from speculation, and it is applied by a reviewer, not only by software.</p>
+
+<h2>Identity resolution</h2>
+<p>Before we assess how you are perceived, we verify that what we found is actually about you.</p>
+<p>Every audit is anchored to a canonical source you provide. Every material claim carries a count of how many independent sources corroborate it. A claim appearing in only one place is never rated high confidence. Not because it is false, but because it is uncorroborated.</p>
+<p>Analysis quality can never exceed identity confidence. We would rather tell you we could not verify something than present a confident finding about the wrong person.</p>
+
+<h2>What AI gets wrong, and what we do about it</h2>
+<p>Language models produce fluent text regardless of whether it is true. They conflate people with similar names. They infer credentials that were never claimed. They fill gaps with plausible invention.</p>
+<p>Our process assumes this. The chain rule exists because of it. The corroboration counts exist because of it. Human review exists because of it.</p>
+<p>We are not claiming AI-free work. We are claiming that AI output is treated as a draft to be verified, never as a finding.</p>
+
+<h2>Your data and AI systems</h2>
+<p class="tbd">[Confirm before publishing: which providers are used, and that the API terms exclude your data from model training.]</p>
+<p>We do not use your information to train AI models. We do not sell it. Retention is covered in our <a href="/privacy.html">Privacy Policy</a>.</p>
+
+<h2>Questions</h2>
+<p>If anything here is unclear, or you want to know how a specific finding in your report was reached, ask. Every finding is traceable, and we will walk you through the chain.</p>
+
+</main>
+<footer>
+  <span>© 2026 Signal &amp; Forma</span>
+  <div class="foot-links" aria-label="Legal">
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/ai-transparency.html">AI Transparency</a>
+  </div>
+</footer>
+</body>
+</html>
